@@ -12,4 +12,8 @@ class Circle
   def circumference
     diameter * Math::PI
   end
+
+  def area
+    (radius * radius) * Math::PI
+  end
 end
