@@ -8,4 +8,8 @@ class Circle
   def diameter
     radius * 2
   end
+
+  def circumference
+    diameter * Math::PI
+  end
 end
