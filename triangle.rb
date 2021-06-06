@@ -20,6 +20,6 @@ class Triangle
   end
 
   def area
-    raise NotImplementedError
+    Math.sqrt(s * (s - a) * (s - b) * (s - c))
   end
 end
