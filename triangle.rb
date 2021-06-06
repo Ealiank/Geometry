@@ -1,17 +1,18 @@
 class Triangle
-  attr_accessor :a, :b
+  attr_accessor :a, :b, :c
 
-  def initialize(a, b)
+  def initialize(a, b, c)
     @a = a
     @b = b
+    @c = c
   end
 
-  def c
-    (a * a) + (b * b)
+  def s
+    perimeter / 2.0
   end
 
   def height
-    (a * b) * 2
+    raise NotImplementedError
   end
 
   def perimeter
@@ -19,6 +20,6 @@ class Triangle
   end
 
   def area
-    (h * b) * 2
+    raise NotImplementedError
   end
 end
