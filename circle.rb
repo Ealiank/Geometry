@@ -14,6 +14,6 @@ class Circle
   end
 
   def area
-    (radius * radius) * Math::PI
+    radius**2 * Math::PI
   end
 end
