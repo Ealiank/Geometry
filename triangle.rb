@@ -7,10 +7,6 @@ class Triangle
     @c = c
   end
 
-  def s
-    perimeter / 2.0
-  end
-
   def height
     raise NotImplementedError
   end
@@ -21,5 +17,11 @@ class Triangle
 
   def area
     Math.sqrt(s * (s - a) * (s - b) * (s - c))
+  end
+
+  private
+
+  def s
+    perimeter / 2.0
   end
 end
